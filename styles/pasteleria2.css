@@ -61,13 +61,15 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
 }
 
 .logo{
     left: 1em;
     position: absolute;
     width: 100px;
+    border-radius: 50%;
 }
 
 nav{
@@ -109,6 +111,7 @@ section{
 /* Contenidos de las pagina */
 
 article{
+    margin: 2em 0;
     padding: 1em;
     max-width: 70%;
     width: 100%;
@@ -166,13 +169,33 @@ article{
     max-height: 200px;
 }
 
+/* Tabla de precios */
+
+
+table{
+    text-align: center;
+    margin: auto;
+}
+
+tr:nth-child(2n){
+    background-color: var(--pink-light);
+}
+
+td{
+    padding: 0 1.5em;
+}
+
+
 /* Seccion del aside */
 
 aside{
+    /* position: sticky;
+    top: 7.3em; */
     padding: 1em;
     width: 30%;
     background-color: #828dab;
     color: #fff;
+    max-height: 700px;
 }
 
 .maps{
@@ -186,5 +209,4 @@ footer{
     padding: 1em;
     text-align: center;
 }
-
 
