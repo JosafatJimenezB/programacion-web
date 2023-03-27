@@ -94,6 +94,8 @@ nav ul li a{
 
 nav ul li a:hover{
     text-decoration: underline;
+    color: #9e4792;
+    text-shadow: 1px 1px 5px #fff;
 }
 
 main{
@@ -174,6 +176,11 @@ article{
     max-height: 200px;
 }
 
+.ingredientes__img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
 /* Tabla de precios */
 
 
@@ -188,6 +195,11 @@ tr:nth-child(2n){
 
 td{
     padding: 0 1.5em;
+}
+
+tr:hover{
+    font-weight: bold;
+    cursor: pointer;
 }
 
 
