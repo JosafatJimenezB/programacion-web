@@ -57,6 +57,7 @@ header{
     padding: 2em 1em;
     background-color: var(--pink-dark);
     color: #fff;
+    width: auto;
 }
 
 .navigation{
@@ -102,15 +103,24 @@ nav ul li a:hover{
     text-shadow: 1px 1px 5px #fff;
 }
 
+
+.has-submenu{
+    position: relative;
+}
+
 .has-submenu .submenu {
     display: none;
 }
 
 .submenu{
+    position: absolute;
+    content: '';
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #bc5fbb;
 }
 
 .has-submenu:hover .submenu {
@@ -241,6 +251,29 @@ aside{
     border-radius: 1em;
     object-fit: cover center;
 }
+
+dialog {
+    max-width: 50%;
+    padding: 40px 70px;
+    background-color: #FAFAFA;
+    margin: auto;
+    border-radius: .5rem;
+}
+
+dialog::backdrop {
+    background: rgba(234, 206, 227, 0.9);
+}
+
+.close-btn{
+    position: absolute;
+    font-size: 1.2em;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    cursor: pointer;
+}
+  
+  
 
 footer{
     padding: 1em;
