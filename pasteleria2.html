@@ -33,9 +33,9 @@
             <li class="has-submenu">
               <a href="#" class="submenu-trigger"><i class="fa-solid fa-cog"></i> Servicios</a>
               <ul class="submenu">
-                <li><a href="#">Diseños</a></li>
-                <li><a href="#">Precios</a></li>
-                <li><a href="#">Promocional</a></li>
+                <li class="submenu__link"><a href="#productos"><i class="fa-solid fa-cake-candles"></i> Diseños</a></li>
+                <li class="submenu__link"><a href="#prices"><i class="fa-solid fa-money-check-dollar"></i>Precios</a></li>
+                <li class="submenu__link"><a href="#" id="openModal-btn" onclick="window.modal.showModal();"><i class="fa-solid fa-video"></i>Promocional</a></li>
               </ul>
             </li>
           <li>
@@ -104,7 +104,7 @@
           </div>
         </article>
 
-        <article class="prices__container">
+        <article class="prices__container" id="prices">
           <div class="subtitle">Precios</div>
           <p class="info">Tabla comparativa de los precios de algunos de nuestros pasteles</p>
           <table>
@@ -250,7 +250,11 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </aside>
-    </main>
+
+      <dialog id="modal">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wD-g_Gyn2I4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <i class="fa-solid fa-xmark close-btn" onclick="window.modal.close();"></i>
+      </dialog>
 
     <footer id="contacto">
       <p>Nos encontramos en 3 oriente 32098-105, en centro histórico</p>
@@ -260,5 +264,7 @@
         <i class="fa-solid fa-phone"></i> 2 66 55 55
       </p>
     </footer>
+
+    <script src="js/pasteleria.js"></script>
   </body>
 </html>
