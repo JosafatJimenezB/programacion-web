@@ -49,6 +49,9 @@ details[open]{
     margin: 1em 0;
 }
 
+.mx-auto{
+    margin: auto;
+}
 
 
 /* Header */
@@ -253,7 +256,9 @@ aside{
 }
 
 dialog {
-    max-width: 50%;
+    width: 100%;
+    max-width: 90%;
+    height: 600px;
     padding: 40px 70px;
     background-color: #FAFAFA;
     margin: auto;
@@ -262,15 +267,6 @@ dialog {
 
 dialog::backdrop {
     background: rgba(234, 206, 227, 0.9);
-}
-
-.close-btn{
-    position: absolute;
-    font-size: 1.2em;
-    top: 0;
-    right: 0;
-    padding: 1em;
-    cursor: pointer;
 }
   
 footer{

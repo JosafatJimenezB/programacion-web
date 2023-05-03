@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/pasteleria2.css" />
+
+    <!-- Font awesome icons library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Pasteleria la cereza</title>
+  </head>
+  <body>
+    <header>
+      <h1>Pasteleria la cereza</h1>
+      <h2>Su pasteleria de confianza</h2>
+    </header>
+    <div class="navigation">
+      <img class="logo" src="./assets/descarga.jpeg" alt="logo" />
+      <nav>
+        <ul>
+          <li>
+            <a href="pasteleria2.html"
+              ><i class="fa-solid fa-house"></i> Inicio</a
+            >
+          </li>
+          <li>
+            <a href="nosotros.html"
+              ><i class="fa-solid fa-people-group"></i>Nosotros</a
+            >
+          </li>
+          <li>
+            <a href="#productos"
+              ><i class="fa-solid fa-cart-shopping"></i> Productos</a
+            >
+          </li>
+
+          <li class="has-submenu">
+            <a href="#" class="submenu-trigger"
+              ><i class="fa-solid fa-cog"></i> Servicios</a
+            >
+            <ul class="submenu">
+              <li class="submenu__link">
+                <a href="#disenos"
+                  ><i class="fa-solid fa-cake-candles"></i> Diseños</a
+                >
+              </li>
+              <li class="submenu__link">
+                <a href="precios.html"
+                  ><i class="fa-solid fa-money-check-dollar"></i>Precios</a
+                >
+              </li>
+              <li class="submenu__link">
+                <a href="promocional.html"
+                  ><i class="fa-solid fa-video"></i>Promocional</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="contacto.html"><i class="fa-solid fa-phone"></i> Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- <p>De mi para todos 06:25 PM</p> -->
+
+    <main>
+      <section>
+        <article class="pasteles__section" id="disenos">
+          <h3 class="subtitle">Diseños</h3>
+          <p class="info">
+            Los más finos pasteles para toda ocasión: bodas, quince años,
+            buatizos y fiestas infantiles
+          </p>
+          <div class="pasteles__container">
+            <div class="pasteles__container__card">
+              <img
+                class="pasteles__img"
+                src="./assets/boda-pastel.jpeg"
+                alt="pastel de bodas"
+              />
+            </div>
+            <div class="pasteles__container__card">
+              <img
+                class="pasteles__img"
+                src="./assets/pastel-cumple.jpg"
+                alt="pastel de cumpleaños"
+              />
+            </div>
+            <div class="pasteles__container__card">
+              <img
+                class="pasteles__img"
+                src="./assets/pastel-infantil.jpg"
+                alt="pastel infantil"
+              />
+            </div>
+          </div>
+        </article>
+        <article id="productos">
+          <h3 class="subtitle">Ingredientes</h3>
+          <p class="info">
+            Nuestros ingredientes son los más finos y son cuidadosamente
+            seleccionados.
+          </p>
+          <div class="ingredientes__container">
+            <div class="pasteles__container__card">
+              <img
+                class="ingredientes__img"
+                src="./assets/harina-pastel.jpg"
+                alt="Harina premium"
+              />
+            </div>
+            <div class="pasteles__container__card">
+              <img
+                class="ingredientes__img"
+                src="./assets/leche-pastel.jpg"
+                alt="Leche selecta"
+              />
+            </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <aside>
+        <h3 class="subtitle">Entregas</h3>
+        <p class="info">
+          "Entregas a domicilio Solicitando el servicio con una hora de
+          anticpación "
+        </p>
+        <iframe
+          class="maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2561607222956!2d-98.19327828451742!3d19.05247178710147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc11dc2007e0d%3A0xd9f90dd79351e6ae!2sEscuela%20Superior%20de%20Ciencias%20y%20Humanidades!5e0!3m2!1ses-419!2smx!4v1678834497854!5m2!1ses-419!2smx"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </aside>
+
+    <footer id="contacto">
+      <div class="contact-infomation">
+        <p>Nos encontramos en 3 oriente 32098-105, en centro histórico</p>
+        <p>
+          www.pasteleria_la_cereza.com Pedidos al
+          <i class="fa-solid fa-phone"></i> 2 66 55 50,
+          <i class="fa-solid fa-phone"></i> 2 66 55 55
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/pasteleria.js"></script>
+  </body>
+</html>
