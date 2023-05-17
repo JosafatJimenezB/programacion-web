@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/pasteleria2.css" />
+    <link rel="stylesheet" href="./styles/contacto.css" />
 
     <!-- Font awesome icons library -->
     <link
@@ -71,6 +72,84 @@
         </ul>
       </nav>
     </div>
-    <h1>Contacto...</h1>
+
+    <section>
+      <h1>Contacto...</h1>
+
+      <form action="" method="POST">
+        <label for="nombre">Escriba su nombre completo:</label>
+        <input
+          class="dark-label"
+          type="text"
+          id="nombre"
+          name="nombre"
+          required
+        />
+
+        <label for="email">Escriba su correo electrónico:</label>
+        <input
+          class="dark-label"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+
+        <label>Marcar el tipo de evento:</label>
+        <label class="evento-radiobtn" for="evento1"
+          >Bautizo
+          <input type="radio" name="evento1" value="Bautizo" />
+        </label>
+        <label class="evento-radiobtn" for="evento2"
+          >Boda
+          <input type="radio" name="evento2" value="Boda" />
+        </label>
+        <label class="evento-radiobtn" for="evento3"
+          >Cumpleaños
+          <input type="radio" name="evento3" value="Cumpleaños" />
+        </label>
+        <label class="evento-radiobtn" for="evento4"
+          >Infantil
+          <input type="radio" name="evento4" value="infantil" />
+        </label>
+        <label class="evento-radiobtn" for="evento5"
+          >Otro evento
+          <input type="radio" name="evento5" value="Otro evento" />
+        </label>
+        <label for="fecha">Indique la fecha y hora del evento:</label>
+        <input
+          class="fecha"
+          type="datetime-local"
+          id="fechaHora"
+          name="fechaHora"
+          required
+        />
+
+        <label for="color">Seleccione el color de su pastel:</label>
+        <input type="color" id="color" name="color" required />
+
+        <label for="mensaje">Describa las características de su pastel:</label>
+        <textarea
+          class="dark-label"
+          id="mensaje"
+          name="mensaje"
+          rows="4"
+          required
+        ></textarea>
+
+        <label for="imagen"
+          >Adjunte la imagen para imprimir en el pastel:</label
+        >
+        <input
+          type="file"
+          id="imagen"
+          name="imagen"
+          accept="image/*"
+          required
+        />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
   </body>
 </html>
