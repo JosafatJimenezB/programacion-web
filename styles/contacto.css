@@ -1,0 +1,53 @@
+section{
+    color: #fff;
+    margin: auto;
+}
+
+section form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    color: #DACA5C;
+    background-color: #4C1F5F;
+}
+
+section form label{
+    margin: 5px 0;
+}
+
+section form input{
+    max-width: 300px;
+    margin: 5px 0;
+    padding: 5px;
+    outline: none;
+    color: #fff;
+    border-bottom: 3px solid #cd8054;
+}
+
+section form textarea{
+    margin: 5px 0;
+    padding: 5px;
+    outline: none;
+    color: #fff;    
+    border-bottom: 3px solid #cd8054;
+}
+
+section form input:focus, textarea:focus{
+    border: 3px solid #cd8054;
+}
+
+.dark-label{
+    background-color:#291D20;
+}
+
+.fecha{
+    color: #000;
+}
+
+.evento-radiobtn{
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
